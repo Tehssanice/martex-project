@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SITE TITLE -->
-    <title>Martex - FAQs Page</title>
+    <title>Martex - Software, App, SaaS & Startup Landing Pages Pack</title>
 
     <!-- FAVICON AND TOUCH ICONS -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -136,13 +136,20 @@
             <span class="smllogo"><img src="images/logo-blue.png" alt="mobile-logo" /></span>
             <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
           </div>
+      <header id="header" class="tra-menu navbar-dark inner-page-header white-scroll">
+        <div class="header-wrapper">
+          <!-- MOBILE HEADER -->
+          <div class="wsmobileheader clearfix">
+            <span class="smllogo"><img src="images/logo-blue.png" alt="mobile-logo" /></span>
+            <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+          </div>
 
           <!-- NAVIGATION MENU -->
           <div class="wsmainfull menu clearfix">
             <div class="wsmainwp clearfix">
               <!-- HEADER BLACK LOGO -->
               <div class="desktoplogo">
-                <a href="demo-15.html" class="logo-black">
+                <a href="demo-1.html" class="logo-black">
                   <img class="light-theme-img" src="images/logo-blue.png" alt="logo" />
                   <img class="dark-theme-img" src="images/logo-blue-white.png" alt="logo" />
                 </a>
@@ -150,31 +157,45 @@
 
               <!-- HEADER WHITE LOGO -->
               <div class="desktoplogo">
-                <a href="demo-15.html" class="logo-white"><img src="images/logo-blue-white.png" alt="logo" /></a>
+                <a href="demo-1.html" class="logo-white"><img src="images/logo-blue-white.png" alt="logo" /></a>
               </div>
 
+              <!-- MAIN MENU -->
               <nav class="wsmenu clearfix">
                 <ul class="wsmenu-list nav-theme">
-                  <li aria-haspopup="true" class="nl-simple">
-                    <a href="about.html" class="h-link">About us</a>
+                  <!-- DROPDOWN SUB MENU -->
+                  <li aria-haspopup="true">
+                    <a href="#" class="h-link">Company <span class="wsarrow"></span></a>
+                    <ul class="sub-menu">
+                      <li aria-haspopup="true"><a href="about.html">About Us</a></li>
+                      <li aria-haspopup="true">
+                        <a href="careers.html">Careers <span class="sm-info">4</span></a>
+                      </li>
+                      <li aria-haspopup="true"><a href="reviews.html">Customers</a></li>
+                      <li aria-haspopup="true"><a href="blog-listing.html">Our Blog</a></li>
+                      <li aria-haspopup="true"><a href="contacts.html">Contact Us</a></li>
+                    </ul>
                   </li>
 
-                  <li class="nl-simple" aria-haspopup="true"><a href="careers.html" class="h-link">Services</a></li>
+                  <!-- SIMPLE NAVIGATION LINK -->
+                  <li class="nl-simple" aria-haspopup="true">
+                    <a href="projects.html" class="h-link">Case Studies</a>
+                  </li>
 
+                  <!-- SIMPLE NAVIGATION LINK -->
                   <li class="nl-simple" aria-haspopup="true"><a href="pricing-1.html" class="h-link">Pricing</a></li>
 
-                  <li class="nl-simple" aria-haspopup="true"><a href="faqs.html" class="h-link">Faq</a></li>
+                  <!-- SIMPLE NAVIGATION LINK -->
+                  <li class="nl-simple" aria-haspopup="true"><a href="faqs.html" class="h-link">FAQs</a></li>
 
-                  <li aria-haspopup="true" class="nl-simple">
-                    <a href="contacts.html" class="h-link">Contact Us</a>
-                  </li>
-
+                  <!-- SIGN IN LINK -->
                   <li class="nl-simple reg-fst-link mobile-last-link" aria-haspopup="true">
-                    <a href="login-2.html" class="h-link">Sign in</a>
+                    <a href="login-2.html" class="h-link">Sign In</a>
                   </li>
 
+                  <!-- SIGN UP BUTTON -->
                   <li class="nl-simple" aria-haspopup="true">
-                    <a href="signup-2.html" class="btn r-04 btn--theme hover--tra-black last-link">Sign up</a>
+                    <a href="signup-2.html" class="btn r-04 btn--theme hover--theme last-link">Get Started</a>
                   </li>
                 </ul>
               </nav>
@@ -884,58 +905,127 @@
       </section>
       <!-- END FAQs-2 -->
 
+      <!-- MODAL WINDOW (NEWSLETTER FORM)
+			============================================= -->
+      <div id="modal-2" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- CLOSE BUTTON -->
+            <button type="button" class="btn-close ico-10 white-color" data-bs-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cancel"></span>
+            </button>
+
+            <!-- MODAL CONTENT -->
+            <div class="modal-body text-center">
+              <!-- IMAGE -->
+              <div class="modal-body-img">
+                <img class="img-fluid" src="images/modal-newsletter-blue.jpg" alt="content-image" />
+              </div>
+
+              <!-- NEWSLETTER FORM -->
+              <div class="modal-body-content">
+                <!-- Title -->
+                <h5 class="s-24 w-700">Stay up to date with our news, ideas and updates</h5>
+
+                <!-- Form -->
+                <form class="newsletter-form purple-focus">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      autocomplete="off"
+                      class="form-control"
+                      placeholder="Your email address"
+                      required
+                      id="s-email"
+                    />
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn--theme hover--theme">Subscribe Now</button>
+                    </span>
+                  </div>
+
+                  <!-- Newsletter Form Notification -->
+                  <label for="s-email" class="form-notification"></label>
+                </form>
+              </div>
+              <!-- END NEWSLETTER FORM -->
+            </div>
+            <!-- END MODAL CONTENT -->
+          </div>
+        </div>
+      </div>
+      <!-- END MODAL WINDOW (NEWSLETTER FORM) -->
+
       <!-- FOOTER-3
 			============================================= -->
-      <footer id="footer-3" class="pt-100 footer ft-3-ntr">
+      <footer id="footer-3" class="pt-100 footer">
         <div class="container">
+          <!-- FOOTER CONTENT -->
           <div class="row">
+            <!-- FOOTER LOGO -->
             <div class="col-xl-3">
               <div class="footer-info">
-                <img class="footer-logo" src="images/logo-violet.png" alt="footer-logo" />
-                <img class="footer-logo-dark" src="images/logo-violet-white.png" alt="footer-logo" />
+                <img class="footer-logo" src="images/logo-blue.png" alt="footer-logo" />
+                <img class="footer-logo-dark" src="images/logo-blue-white.png" alt="footer-logo" />
               </div>
             </div>
 
-            <div class="col-sm-4 col-lg-3 col-xl-2">
+            <!-- FOOTER LINKS -->
+            <div class="col-sm-4 col-md-3 col-xl-2">
               <div class="footer-links fl-1">
+                <!-- Title -->
                 <h6 class="s-17 w-700">Company</h6>
 
+                <!-- Links -->
                 <ul class="foo-links clearfix">
                   <li>
                     <p><a href="about.html">About Us</a></p>
                   </li>
-
                   <li>
-                    <p><a href="faqs.html">FAQs</a></p>
+                    <p><a href="careers.html">Careers</a></p>
                   </li>
-
+                  <li>
+                    <p><a href="blog-listing.html">Our Blog</a></p>
+                  </li>
                   <li>
                     <p><a href="contacts.html">Contact Us</a></p>
                   </li>
                 </ul>
               </div>
             </div>
+            <!-- END FOOTER LINKS -->
 
-            <div class="col-sm-4 col-lg-2">
+            <!-- FOOTER LINKS -->
+            <div class="col-sm-4 col-md-3 col-xl-2">
               <div class="footer-links fl-2">
+                <!-- Title -->
                 <h6 class="s-17 w-700">Product</h6>
 
+                <!-- Links -->
                 <ul class="foo-links clearfix">
                   <li>
-                    <p><a href="careers.html">Services</a></p>
+                    <p><a href="features.html">Integration</a></p>
                   </li>
-
+                  <li>
+                    <p><a href="reviews.html">Customers</a></p>
+                  </li>
                   <li>
                     <p><a href="pricing-1.html">Pricing</a></p>
+                  </li>
+                  <li>
+                    <p><a href="help-center.html">Help Center</a></p>
                   </li>
                 </ul>
               </div>
             </div>
+            <!-- END FOOTER LINKS -->
 
-            <div class="col-sm-4 col-lg-3 col-xl-2">
+            <!-- FOOTER LINKS -->
+            <div class="col-sm-4 col-md-3 col-xl-2">
               <div class="footer-links fl-3">
+                <!-- Title -->
                 <h6 class="s-17 w-700">Legal</h6>
 
+                <!-- Links -->
                 <ul class="foo-links clearfix">
                   <li>
                     <p><a href="terms.html">Terms of Use</a></p>
@@ -943,42 +1033,30 @@
                   <li>
                     <p><a href="privacy.html">Privacy Policy</a></p>
                   </li>
+                  <li>
+                    <p><a href="cookies.html">Cookie Policy</a></p>
+                  </li>
+                  <li>
+                    <p><a href="#">Site Map</a></p>
+                  </li>
                 </ul>
               </div>
             </div>
+            <!-- END FOOTER LINKS -->
 
-            <div class="col-sm-10 col-md-8 col-lg-4 col-xl-3">
-              <div class="footer-form">
-                <h6 class="s-17 w-700">Follow the Best</h6>
+            <!-- FOOTER LINKS -->
+            <div class="col-sm-6 col-md-3">
+              <div class="footer-links fl-4">
+                <!-- Title -->
+                <h6 class="s-17 w-700">Connect With Us</h6>
 
-                <form class="newsletter-form">
-                  <div class="input-group r-06">
-                    <input type="email" class="form-control" placeholder="Email Address" required id="s-email" />
-                    <span class="input-group-btn ico-15">
-                      <button type="submit" class="btn color--theme" title="btn">
-                        <span class="flaticon-right-arrow-1"></span>
-                      </button>
-                    </span>
-                  </div>
+                <!-- Mail Link -->
+                <p class="footer-mail-link ico-25">
+                  <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a>
+                </p>
 
-                  <label for="s-email" class="form-notification"></label>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <div class="bottom-footer">
-            <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
-              <div class="col">
-                <div class="footer-copyright">
-                  <p class="p-sm">&copy; 2023 Martex. <span>All Rights Reserved</span></p>
-                </div>
-              </div>
-
-              <div class="col">
-                <ul class="bottom-footer-socials ico-20 text-end">
+                <!-- Social Links -->
+                <ul class="footer-socials ico-25 text-center clearfix">
                   <li>
                     <a href="#"><span class="flaticon-facebook"></span></a>
                   </li>
@@ -986,16 +1064,47 @@
                     <a href="#"><span class="flaticon-twitter"></span></a>
                   </li>
                   <li>
-                    <a href="#"><span class="flaticon-instagram"></span></a>
+                    <a href="#"><span class="flaticon-github"></span></a>
                   </li>
                   <li>
-                    <a href="#"><span class="flaticon-youtube"></span></a>
+                    <a href="#"><span class="flaticon-dribbble"></span></a>
                   </li>
                 </ul>
               </div>
             </div>
+            <!-- END FOOTER LINKS -->
           </div>
+          <!-- END FOOTER CONTENT -->
+
+          <hr />
+          <!-- FOOTER DIVIDER LINE -->
+
+          <!-- BOTTOM FOOTER -->
+          <div class="bottom-footer">
+            <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+              <!-- FOOTER COPYRIGHT -->
+              <div class="col">
+                <div class="footer-copyright">
+                  <p class="p-sm">&copy; 2023 Martex. <span>All Rights Reserved</span></p>
+                </div>
+              </div>
+
+              <!-- FOOTER SECONDARY LINK -->
+              <div class="col">
+                <div class="bottom-secondary-link ico-15 text-end">
+                  <p class="p-sm">
+                    <a href="https://themeforest.net/user/dsathemes/portfolio"
+                      >Made with <span class="flaticon-heart color--pink-400"></span> by @DSAThemes</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END BOTTOM FOOTER -->
         </div>
+        <!-- End container -->
       </footer>
       <!-- END FOOTER-3 -->
     </div>
