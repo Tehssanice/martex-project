@@ -121,6 +121,67 @@
     <!-- PAGE CONTENT
 		============================================= -->
     <div id="page" class="page font--jakarta">
+      <header id="header" class="tra-menu navbar-dark light-hero-header white-scroll mb-100">
+        <div class="header-wrapper">
+          <div class="wsmobileheader clearfix">
+            <a href="index.html">
+              <span class="smllogo"><img src="images/logo-violet.png" alt="mobile-logo" /></span>
+            </a>
+            <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+          </div>
+
+          <!-- NAVIGATION MENU -->
+          <div class="wsmainfull menu clearfix">
+            <div class="wsmainwp clearfix">
+              <div class="desktoplogo">
+                <a href="index.html" class="logo-black">
+                  <img class="light-theme-img" src="images/logo-violet.png" alt="logo" />
+                  <img class="dark-theme-img" src="images/logo-violet-white.png" alt="logo" />
+                </a>
+              </div>
+
+              <div class="desktoplogo">
+                <a href="index.html" class="logo-white"><img src="images/logo-violet-white.png" alt="logo" /></a>
+              </div>
+
+              <nav class="wsmenu clearfix">
+                <ul class="wsmenu-list nav-theme">
+                  <li aria-haspopup="true" class="nl-simple">
+                    <a href="about.html" class="h-link">About us</a>
+                  </li>
+
+                  <li class="nl-simple" aria-haspopup="true"><a href="services.html" class="h-link">Services</a></li>
+
+                  <li class="nl-simple" aria-haspopup="true"><a href="pricing.html" class="h-link">Pricing</a></li>
+
+                  <li class="nl-simple" aria-haspopup="true"><a href="faqs.html" class="h-link">Faq</a></li>
+
+                  <li aria-haspopup="true">
+                    <a href="#" class="h-link">Legal <span class="wsarrow"></span></a>
+                    <ul class="sub-menu">
+                      <li aria-haspopup="true"><a href="privacy.html">Privacy Policy</a></li>
+
+                      <li aria-haspopup="true"><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                  </li>
+
+                  <li aria-haspopup="true" class="nl-simple">
+                    <a href="contacts.html" class="h-link">Contact Us</a>
+                  </li>
+
+                  <li class="nl-simple reg-fst-link mobile-last-link" aria-haspopup="true">
+                    <a href="login.html" class="h-link">Sign in</a>
+                  </li>
+
+                  <li class="nl-simple" aria-haspopup="true">
+                    <a href="signup.html" class="btn r-04 btn--theme hover--tra-black last-link">Sign up</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- SIGN UP PAGE
 			============================================= -->
       <div id="signup" class="bg--scroll login-section division">
@@ -134,45 +195,61 @@
                   <div class="col-md-6">
                     <div class="register-page-form">
                       <form name="signupform" class="row sign-up-form">
-                        <div class="col-md-12">
-                          <a href="#" class="btn btn-google ico-left">
-                            <img src="images/png_icons/google.png" alt="google-icon" /> Sign up with Google
-                          </a>
-                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Firstname</p>
+                              <input class="form-control name" type="text" name="name" placeholder="John Doe" />
+                            </div>
 
-                        <div class="col-md-12 text-center">
-                          <div class="separator-line">Or, sign up with your email</div>
-                        </div>
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Email address</p>
+                              <input
+                                class="form-control email"
+                                type="email"
+                                name="email"
+                                placeholder="example@example.com"
+                              />
+                            </div>
 
-                        <div class="col-md-12">
-                          <p class="p-sm input-header">Firstname</p>
-                          <input class="form-control name" type="text" name="name" placeholder="John Doe" />
-                        </div>
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Country</p>
 
-                        <div class="col-md-12">
-                          <p class="p-sm input-header">Lastname</p>
-                          <input class="form-control name" type="text" name="name" placeholder="John Doe" />
-                        </div>
+                              <select name="" id="" title="country" class="form-control email">
+                                <option value="">Afghanistan</option>
+                                <option value="">Albania</option>
+                                <option value="">Berlin</option>
+                                <option value="">Cambodia</option>
+                              </select>
+                            </div>
+                          </div>
 
-                        <div class="col-md-12">
-                          <p class="p-sm input-header">Email address</p>
-                          <input
-                            class="form-control email"
-                            type="email"
-                            name="email"
-                            placeholder="example@example.com"
-                          />
-                        </div>
+                          <div class="col">
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Lastname</p>
+                              <input class="form-control name" type="text" name="name" placeholder="John Doe" />
+                            </div>
 
-                        <div class="col-md-12">
-                          <p class="p-sm input-header">Phone number</p>
-                          <input
-                            class="form-control email"
-                            type="number"
-                            name="number"
-                            title="input"
-                            placeholder="080 123 456 789"
-                          />
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Phone number</p>
+                              <input
+                                class="form-control email"
+                                type="number"
+                                name="number"
+                                title="input"
+                                placeholder="080 123 456 789"
+                              />
+                            </div>
+
+                            <div class="col-md-12">
+                              <p class="p-sm input-header">Gender</p>
+
+                              <select name="" id="" title="gender" class="form-control email">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
 
                         <div class="col-md-12">
@@ -187,7 +264,6 @@
                             />
                           </div>
                         </div>
-
                         <!-- Checkbox -->
                         <div class="col-md-12">
                           <div class="form-data">
@@ -207,7 +283,7 @@
                         <!-- Log In Link -->
                         <div class="col-md-12">
                           <p class="create-account text-center">
-                            Already have an account? <a href="login-2.html" class="color--theme">Log in</a>
+                            Already have an account? <a href="login.html" class="color--theme">Log in</a>
                           </p>
                         </div>
                       </form>
@@ -219,7 +295,9 @@
                   <div class="col-md-6">
                     <div class="register-page-txt color--white">
                       <!-- Section ID -->
-                      <span class="section-id">Start for free</span>
+                      <a href="index.html">
+                        <img class="img-fluid" src="images/logo-white.png" alt="logo-image" />
+                      </a>
 
                       <!-- Title -->
                       <h2 class="s-48 w-700">Create</h2>
@@ -307,24 +385,7 @@
       });
     </script>
 
-    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-    <!--
-		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		-->
-
     <script src="js/changer.js"></script>
     <script defer src="js/styleswitch.js"></script>
   </body>
-
-  <!-- Mirrored from dsathemes.com/html/martex_1.1/files/signup-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Nov 2023 18:02:01 GMT -->
 </html>
